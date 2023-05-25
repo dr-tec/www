@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>How to Install Wordpress on Debian - dr Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/favicon-32x32.svg">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair&#43;Display:wght@600&amp;family=Source&#43;Sans&#43;Pro:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="/css/style.min.580f51d8589a5cd72822e2b4ea40c36f62652bc4fc4e151efb3a43a9b877ad59.css">
+
+  
+
+  
+    
+    <meta property="og:title" content="How to Install Wordpress on Debian"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="/blog/how-to-install-wordpress-on-debian/"/>
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    
+    
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-home ">
+      <a href="/">
+        <span>Home</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-about ">
+      <a href="/about/">
+        <span>About</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="/"><img height=36px alt="dr Technologies - Cloud &amp; IT Consulting" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="/"><img height=36px alt="dr Technologies - Cloud &amp; IT Consulting" src="/images/logo.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-home ">
+      <a href="/">
+        
+        <span>Home</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-about ">
+      <a href="/about/">
+        
+        <span>About</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+    
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <h1 class="title">How to Install Wordpress on Debian</h1>
+      <div class="content"><p>apt update</p>
+<p>apt-get install nginx</p>
+<p>sudo systemctl start nginx</p>
+<p>sudo systemctl enable nginx</p>
+<p>sudo systemctl status nginx</p>
+<p>apt-get install php php-mysql php-fpm php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip mariadb-server mariadb-client</p>
+<p>sudo systemctl start mariadb</p>
+<p>sudo systemctl enable mariadb</p>
+<p>sudo systemctl status mariadb</p>
+<p>sudo systemctl start php7.4-fpm &amp;&amp; systemctl enable php7.4-fpm &amp;&amp; systemctl status php7.4-fpm</p>
+<p>mysql_secure_installation</p>
+<p>sudo mysql_secure_installation</p>
+<p>NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB</p>
+<p>SERVERS IN PRODUCTION USE! PLEASE READ EACH STEP CAREFULLY!</p>
+<p>In order to log into MariaDB to secure it, we&rsquo;ll need the current</p>
+<p>password for the root user. If you&rsquo;ve just installed MariaDB, and</p>
+<p>you haven&rsquo;t set the root password yet, the password will be blank,</p>
+<p>so you should just press enter here.</p>
+<p>Enter current password for root (enter for none):</p>
+<p>OK, successfully used password, moving on&hellip;</p>
+<p>Setting the root password ensures that nobody can log into the MariaDB</p>
+<p>root user without the proper authorisation.</p>
+<p>Set root password? [Y/n] n</p>
+<p>&hellip; skipping.</p>
+<p>By default, a MariaDB installation has an anonymous user, allowing anyone</p>
+<p>to log into MariaDB without having to have a user account created for</p>
+<p>them. This is intended only for testing, and to make the installation</p>
+<p>go a bit smoother. You should remove them before moving into a</p>
+<p>production environment.</p>
+<p>Remove anonymous users? [Y/n] y</p>
+<p>&hellip; Success!</p>
+<p>Normally, root should only be allowed to connect from &rsquo;localhost&rsquo;. This</p>
+<p>ensures that someone cannot guess at the root password from the network.</p>
+<p>Disallow root login remotely? [Y/n] y</p>
+<p>&hellip; Success!</p>
+<p>By default, MariaDB comes with a database named &rsquo;test&rsquo; that anyone can</p>
+<p>access. This is also intended only for testing, and should be removed</p>
+<p>before moving into a production environment.</p>
+<p>Remove test database and access to it? [Y/n] y</p>
+<ul>
+<li>Dropping test database&hellip;</li>
+</ul>
+<p>&hellip; Success!</p>
+<ul>
+<li>Removing privileges on test database&hellip;</li>
+</ul>
+<p>&hellip; Success!</p>
+<p>Reloading the privilege tables will ensure that all changes made so far</p>
+<p>will take effect immediately.</p>
+<p>Reload privilege tables now? [Y/n] y</p>
+<p>&hellip; Success!</p>
+<p>Cleaning up&hellip;</p>
+<p>All done! If you&rsquo;ve completed all of the above steps, your MariaDB</p>
+<p>installation should now be secure.</p>
+<p>Thanks for using MariaDB!</p>
+<p>sudo mysql</p>
+<p>Welcome to the MariaDB monitor. Commands end with ; or \g.</p>
+<p>Your MariaDB connection id is 44</p>
+<p>Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.</p>
+<p>Type &lsquo;help;&rsquo; or &lsquo;\h&rsquo; for help. Type &lsquo;\c&rsquo; to clear the current input statement.</p>
+<p>MariaDB [(none)]&gt; CREATE DATABASE wordpress_db;</p>
+<p>Query OK, 1 row affected (0.003 sec)</p>
+<p>MariaDB [(none)]&gt; CREATE USER &lsquo;wordpress_user&rsquo;@&rsquo;localhost&rsquo; IDENTIFIED BY &lsquo;YourPasswordHere&rsquo;;</p>
+<p>Query OK, 0 rows affected (0.005 sec)</p>
+<p>MariaDB [(none)]&gt; GRANT ALL PRIVILEGES ON wordpress_db.* to wordpress_user@&rsquo;localhost&rsquo;;</p>
+<p>Query OK, 0 rows affected (0.006 sec)</p>
+<p>MariaDB [(none)]&gt; FLUSH PRIVILEGES;</p>
+<p>Query OK, 0 rows affected (0.001 sec)</p>
+<p>MariaDB [(none)]&gt; EXIT;</p>
+<p>Bye</p>
+<p>wget -O /tmp/wordpress.tar.gz <a href="https://wordpress.org/latest.tar.gz">https://wordpress.org/latest.tar.gz</a></p>
+<p>tar -xzvf /tmp/wordpress.tar.gz -C /var/www/html</p>
+<p>sudo chown -R www-data.www-data /var/www/html/wordpress</p>
+<p>sudo chmod -R 755 /var/www/html/wordpress</p>
+<p>nano /etc/nginx/conf.d/wordpress.conf</p>
+<p>Copy the the lines between the begin and end block below then save to the config file.</p>
+<p>###Begin Block###</p>
+<p>server {</p>
+<p>listen 80;</p>
+<p>listen [::]:80;</p>
+<p>root /var/www/html/wordpress;</p>
+<p>index index.php index.html index.htm;</p>
+<p>error_log /var/log/nginx/wordpress_error.log;</p>
+<p>access_log /var/log/nginx/wordpres_access.log;</p>
+<p>client_max_body_size 100M;</p>
+<p>location / {</p>
+<p>try_files $uri $uri/ /index.php?$args;</p>
+<p>}</p>
+<p>location ~ .php$ {</p>
+<p>include snippets/fastcgi-php.conf;</p>
+<p>fastcgi_pass unix:/run/php/php7.4-fpm.sock;</p>
+<p>fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;</p>
+<p>}</p>
+<p>}</p>
+<p>###End Block###</p>
+<p>rm /etc/nginx/sites-enabled/default</p>
+<p>rm /etc/nginx/sites-available/default</p>
+<p>nginx -t</p>
+<p>systemctl reload nginx</p>
+<p>Open a browser session and point it to http://ip address to launch the install wizard.</p>
+<p><img src="/images/wordpress_wizard.png" alt="wordpress wizard"></p>
+</div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          <h3 class="footer-title">dr Technologies</h3>
+          <div id="footer-menu" class="footer-menu">
+  <ul>
+    
+    
+    
+    
+    <li class="menu-item-home ">
+      <a href="/">
+        
+        <span>Home</span>
+      </a>
+    </li>
+    
+    
+    
+    <li class="menu-item-about ">
+      <a href="/about/">
+        
+        <span>About</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          
+            
+<div class="social">
+    
+        <a href="https://github.com/dr-tec" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+    
+</div>
+
+          
+          
+            <div class="copyright">2023 &copy; <a class="zerostatic" href="https://www.drtecus.com">dr Technologies</a> powered by Hugo</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+
+  
+  
+
+  
+    
+  
+  <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
+
+  
+
+
+  
+
+
+</body>
+
+</html>

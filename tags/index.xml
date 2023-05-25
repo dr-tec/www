@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on dr Technologies</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on dr Technologies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 May 2023 19:07:25 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chromeos</title>
+      <link>/tags/chromeos/</link>
+      <pubDate>Sun, 21 May 2023 19:07:25 -0500</pubDate>
+      
+      <guid>/tags/chromeos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gnome boxes</title>
+      <link>/tags/gnome-boxes/</link>
+      <pubDate>Tue, 02 May 2023 14:51:46 -0500</pubDate>
+      
+      <guid>/tags/gnome-boxes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>qemu</title>
+      <link>/tags/qemu/</link>
+      <pubDate>Tue, 02 May 2023 14:51:46 -0500</pubDate>
+      
+      <guid>/tags/qemu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Mon, 01 May 2023 14:22:29 +0000</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell script</title>
+      <link>/tags/shell-script/</link>
+      <pubDate>Mon, 01 May 2023 14:22:29 +0000</pubDate>
+      
+      <guid>/tags/shell-script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>/tags/debian/</link>
+      <pubDate>Mon, 01 May 2023 02:58:09 +0000</pubDate>
+      
+      <guid>/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wordpress</title>
+      <link>/tags/wordpress/</link>
+      <pubDate>Mon, 01 May 2023 02:58:09 +0000</pubDate>
+      
+      <guid>/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

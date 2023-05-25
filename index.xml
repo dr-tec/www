@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on dr Technologies</title>
+    <link>/</link>
+    <description>Recent content in Homepage on dr Technologies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 May 2023 19:07:25 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Chromeos Sudo Password</title>
+      <link>/blog/set-chromeos-sudo-password/</link>
+      <pubDate>Sun, 21 May 2023 19:07:25 -0500</pubDate>
+      
+      <guid>/blog/set-chromeos-sudo-password/</guid>
+      <description>When you enable developer mode you are prompted to set a root password but this is not the SUDO password. You must set a new SUDO password.
+Press CTRL-ALT-F2 (or Forward)
+Login as root.
+At the prompt type:
+chromeos-setdevpasswd
+That’s it!</description>
+    </item>
+    
+    <item>
+      <title>Install Gnome Boxes on Chromebook</title>
+      <link>/blog/install-gnome-boxes-on-chromebook/</link>
+      <pubDate>Tue, 02 May 2023 14:51:46 -0500</pubDate>
+      
+      <guid>/blog/install-gnome-boxes-on-chromebook/</guid>
+      <description>sudo apt update
+sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon virt-manager -y
+sudo apt install gnome-boxes
+cd /etc/libvirt
+sudo nano qemu.conf
+Uncomment user and group:
+add the line to the end of the file and save:
+xhost +</description>
+    </item>
+    
+    <item>
+      <title>Linux Script to Decrypt Files</title>
+      <link>/blog/linux-script-to-decrypt-files/</link>
+      <pubDate>Mon, 01 May 2023 14:22:29 +0000</pubDate>
+      
+      <guid>/blog/linux-script-to-decrypt-files/</guid>
+      <description>Here is a shell script to decrypt a folder of files that was originally encrypted with openssl.
+#! /bin/bash
+#Disclaimer: This script is provided &amp;ldquo;as -is&amp;rdquo; for use at your sole risk without any warranty, whether
+#express or implied of its accuracy, completeness, fitness for a particular purpose. The author accepts no liability for any damages or data loss you may sustain even
+#if it has been advised of the possibility of such damages.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 May 2023 06:14:26 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I&amp;rsquo;m an Infrastructure Engineer, and freelancer, working in the energy sector. In my current role I am focused on Operational Technology (OT) and Cyber Security. I have 30+ years experience in the core technologies: compute, network, storage, virtualization, and cloud.
+I love what I do and I want to share. This site is dedicated to how-to&amp;rsquo;s, code snippets, and projects I&amp;rsquo;m involved in.
+Welcome and enjoy!
+In Him.
+dlr</description>
+    </item>
+    
+    <item>
+      <title>How to Install Wordpress on Debian</title>
+      <link>/blog/how-to-install-wordpress-on-debian/</link>
+      <pubDate>Mon, 01 May 2023 02:58:09 +0000</pubDate>
+      
+      <guid>/blog/how-to-install-wordpress-on-debian/</guid>
+      <description>apt update
+apt-get install nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+sudo systemctl status nginx
+apt-get install php php-mysql php-fpm php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip mariadb-server mariadb-client
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+sudo systemctl status mariadb
+sudo systemctl start php7.4-fpm &amp;amp;&amp;amp; systemctl enable php7.4-fpm &amp;amp;&amp;amp; systemctl status php7.4-fpm
+mysql_secure_installation
+sudo mysql_secure_installation
+NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Thu, 22 Feb 2018 17:01:34 +0700</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+Day Opening Hours Tuesday 8:30am - 5:00pm Wednesday 8:30am - 5:00pm Thursday 8:30am - 5:00pm Friday 8:30am - 5:00pm Saturday 10:am - 4:00pm Sunday Closed </description>
+    </item>
+    
+  </channel>
+</rss>

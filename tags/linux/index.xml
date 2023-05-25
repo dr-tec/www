@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on dr Technologies</title>
+    <link>/tags/linux/</link>
+    <description>Recent content in linux on dr Technologies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 May 2023 14:22:29 +0000</lastBuildDate><atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Script to Decrypt Files</title>
+      <link>/blog/linux-script-to-decrypt-files/</link>
+      <pubDate>Mon, 01 May 2023 14:22:29 +0000</pubDate>
+      
+      <guid>/blog/linux-script-to-decrypt-files/</guid>
+      <description>Here is a shell script to decrypt a folder of files that was originally encrypted with openssl.
+#! /bin/bash
+#Disclaimer: This script is provided &amp;ldquo;as -is&amp;rdquo; for use at your sole risk without any warranty, whether
+#express or implied of its accuracy, completeness, fitness for a particular purpose. The author accepts no liability for any damages or data loss you may sustain even
+#if it has been advised of the possibility of such damages.</description>
+    </item>
+    
+  </channel>
+</rss>

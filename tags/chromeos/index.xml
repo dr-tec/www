@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chromeos on dr Technologies</title>
+    <link>/tags/chromeos/</link>
+    <description>Recent content in chromeos on dr Technologies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 May 2023 19:07:25 -0500</lastBuildDate><atom:link href="/tags/chromeos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Set Chromeos Sudo Password</title>
+      <link>/blog/set-chromeos-sudo-password/</link>
+      <pubDate>Sun, 21 May 2023 19:07:25 -0500</pubDate>
+      
+      <guid>/blog/set-chromeos-sudo-password/</guid>
+      <description>When you enable developer mode you are prompted to set a root password but this is not the SUDO password. You must set a new SUDO password.
+Press CTRL-ALT-F2 (or Forward)
+Login as root.
+At the prompt type:
+chromeos-setdevpasswd
+That’s it!</description>
+    </item>
+    
+    <item>
+      <title>Install Gnome Boxes on Chromebook</title>
+      <link>/blog/install-gnome-boxes-on-chromebook/</link>
+      <pubDate>Tue, 02 May 2023 14:51:46 -0500</pubDate>
+      
+      <guid>/blog/install-gnome-boxes-on-chromebook/</guid>
+      <description>sudo apt update
+sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon virt-manager -y
+sudo apt install gnome-boxes
+cd /etc/libvirt
+sudo nano qemu.conf
+Uncomment user and group:
+add the line to the end of the file and save:
+xhost +</description>
+    </item>
+    
+  </channel>
+</rss>
